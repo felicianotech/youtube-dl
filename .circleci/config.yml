@@ -10,7 +10,6 @@ jobs:
     docker:
       - image: cimg/python:3.6
     environment:
-      YTDL_TEST_SET: core
       YTDL_TEST_SET: download
     steps:
       - checkout
