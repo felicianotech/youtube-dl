@@ -1,0 +1,11 @@
+workflow:
+  main:
+    - test
+
+jobs:
+  test:
+    docker:
+      - image: cimg/python:3.6
+    steps:
+      - checkout
+      - run: ./devscripts/run_tests.sh
